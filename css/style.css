@@ -1,10 +1,15 @@
 :root {
     --main-bg-color: rgba(12, 11, 8, 1);
+    --form-bg-color: rgba(12, 12, 12, 1);
     --white: rgba(255, 255, 255, 1);
     --yellow: rgba(220, 202, 135, 1);
     --gray: rgba(170, 170, 170, 1);
     --gradient-color:rgba(12, 12, 12, 1);
     --beige: rgba(245, 239, 219, 1);
+    --border-form-color: rgba(220, 202, 135, 0.2);
+    --line-color: rgba(250, 250, 250, 1);
+    --laurels-button: rgba(220, 202, 135, 1);
+
 }
 .container-header {
     display: flex;
@@ -140,28 +145,28 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .content-sandwich {
+}
+.content-sandwich {
     position: relative;
     z-index: 2;
     height: auto;
-  }
-  .content-cube,
-  .content-cube-sec {
+}
+.content-cube,
+.content-cube-sec {
     position: absolute;
     width: 435px;
     height: 435px;
     background-color: var(--yellow);
     z-index: 1;
-  }
-  .content-cube {
+}
+.content-cube {
     top: 276px;
     left: -24px;
-  }
-  .content-cube-sec {
+}
+.content-cube-sec {
     top: -24px;
     right: -24px;
-  }
+}
 .info-name::after {
     content: "";
     background-image: url(../img/decoration-spoon-left.svg);
@@ -170,9 +175,23 @@
     height: 9px;
     display: block;
     background-repeat: no-repeat;
+    position: relative;
+    left: 508px;
+}
+.info-name-right::after {
+    content: "";
+    background-image: url(../img/spoon.svg);
+    background-size: contain;
+    width: 40px;
+    height: 9px;
+    display: block;
+    background-repeat: no-repeat;
+    position: relative;
+    left: -2px;
 }
 .special-menu {
     display: flex;
+    gap: 32px;
 }
 .chef-role::after {
     content: "";
@@ -182,6 +201,7 @@
     height: 83px;
     display: block;
     background-repeat: no-repeat;
+    margin-top: 64px;
 }
 .customers-list-item {
     display: flex;
@@ -192,6 +212,9 @@
     background-position: center;
     width: 1920px;
     height: 763px;
+    background-size: cover; /* Это растянет фон на весь экран */
+    width: 100%; /* Растягивает блок на всю ширину экрана */
+
 }
 .laurels-items {
     display: flex;
@@ -229,6 +252,7 @@ h5 {
     line-height: 29.9px;
     letter-spacing: 0.04em;
     text-align: left;
+    color: var(--white);
 }
 h4 {
     font-family: 'Cormorant Upright';
@@ -288,4 +312,490 @@ p {
     line-height: 31.5px;
     letter-spacing: 0.04em;
     color: var(--white);
+}
+.information {
+    background-image: url(../img/second-sec-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: padding-box;
+    background-position: center;
+}
+.reservation {
+    background-color: var(--main-bg-color);
+}
+.menus {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+    url(../img/fourth-bg-without-gradient.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: padding-box;
+    background-position: center;
+}
+.special-menu-bg {
+    background-color: var(--main-bg-color);
+
+}
+.information .container {
+    display: flex;
+    gap: 74px;
+    align-items: center;
+    padding-top: 120px;
+    padding-bottom: 136px;
+}
+.info-left {
+    text-align: right;
+    
+}
+.yellow-button {
+    background-color: var(--yellow);
+    padding: 8px 32px;
+}
+.info-description {
+    margin-bottom: 32px;
+    margin-top: 32px;
+
+}
+.info-name, .info-name-right {
+    margin-bottom: 8px;
+}
+.information {
+    position: relative;
+    overflow: hidden; 
+}
+.information::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 391px;
+    height: 415px; 
+    background-image: url(../img/content-g.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+    z-index: 0;
+}
+.container {
+    position: relative;
+    z-index: 1;
+}
+.info-image {
+    position: relative;
+    z-index: 1;
+ }
+.menus-list {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+.menus .container {
+    padding: 261px 0px;
+}
+.special-menu-h5, .special-menu-h2 {
+    text-align: center;
+}
+.special-menu-h5::after {
+    content: "";
+    background-image: url(../img/decoration-spoon.svg);
+    background-size: contain;
+    width: 40px;
+    height: 9px;
+    display: block;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 48.5%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.chef-information {
+    background-image: url(../img/second-sec-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: padding-box;
+    background-position: center;
+}
+.chef-foto {
+    display: flex;
+}
+.customers {
+    background-color: var(--main-bg-color);
+}
+.customers-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+.customers-list-item {
+    width: 634px;
+}
+.reservation-text-h5, .reservation-text-h2 {
+    text-align: center;
+}
+.reservation-text-h5 {
+    padding-top: 48px;
+    
+}
+.reservation-text-h5::after {
+    content: "";
+    background-image: url(../img/decoration-spoon.svg);
+    background-size: contain;
+    width: 40px;
+    height: 9px;
+    display: block;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 48.9%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.form {
+    background-color: transparent;
+    border: 1px solid var(--beige);
+    width: 412px;
+    height: 60px;
+    margin: 64px 0px;
+    color: var(--gray);
+    font-family: 'Cormorant Upright';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0.04em;
+}
+.yellow-button-submit {
+    background-color: var(--yellow);
+    padding: 8px 32px;
+    margin-bottom: 48px;
+}
+.submit-button {
+    display: flex;
+    justify-content: center;
+}
+.reservation-form {
+    align-items: center;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.bg-form {
+    background-color: var(--form-bg-color);
+    border: 1px solid var(--border-form-color);
+    padding: 0px 32px;
+}
+.reservation .container {
+    padding-top: 157px;
+    padding-bottom: 152px;
+    display: flex;
+    justify-content: center;
+}
+.wine-beer {
+    width: 412px;
+}
+.other-cocktails {
+    width: 412px;
+}
+.name-of-cocktail {
+    color:  var(--yellow);
+}
+.cocktail-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    align-items: center;
+    gap: 32px;
+}
+.special-cocktail-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.special-menu-bg {
+    padding-top: 152px;
+    padding-bottom: 152px;
+}
+.special-menu-h2 {
+    margin-bottom: 64px;
+}
+.cocktail-name {
+    font-family: 'Cormorant Upright';
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 58.5px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: var(--white);
+    margin-bottom: 48px;
+}
+.line {
+    background-color: var(--line-color);
+    height: 1px;
+    width: 119px;
+    
+}
+.line-price {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.special-menu {
+    margin-bottom: 64px;
+}
+.yellow-button {
+    background-color: var(--yellow);
+    padding: 8px 32px;
+}
+.button {
+    display: flex;
+    justify-content: center;
+}
+.content-foto-chef {
+    position: relative;
+    width: 586px;
+    height: 741px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-chef {
+    position: relative;
+    z-index: 2;
+    height: auto;
+}
+.chef-cube,
+.chef-cube-sec {
+    position: absolute;
+    width: 435px;
+    height: 435px;
+    background-color: var(--yellow);
+    z-index: 1;
+}
+.chef-cube {
+    top: 328px;
+    left: -24px;
+}
+.chef-cube-sec {
+    top: -24px;
+    right: -24px;
+}
+.chef-cube, .chef-cube-sec {
+    width: 435px;
+    height: 435px;
+    background-color: var(--yellow);
+}
+.chef-item {
+    margin-left: 120px;
+}
+.chef-information {
+    padding: 152px 0px;
+}
+.chef-item-h5::after {
+    content: "";
+    background-image: url(../img/decoration-spoon.svg);
+    background-size: contain;
+    width: 40px;
+    height: 9px;
+    display: block;
+    background-repeat: no-repeat;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.decoration-symbol::before {
+    background-image: url(../img/decoration-symbol.svg) ;
+    content: "";
+    width: 47px;
+    height: 40px; 
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.decor {
+    display: flex;
+    gap: 10px;
+}
+.chef-item-info-second {
+    padding-top: 12px;
+    font-style: italic;
+}
+.chef-item-key {
+    margin-bottom: 64px;
+}
+.chef-name {
+    margin-top: 64px;
+    margin-bottom: 8px;
+}
+.chef-role {
+    padding-bottom: 64px;
+}
+.chef-item {
+    padding-top: 87px;
+}
+.customers-text-h5, .customers-text-h2 {
+    text-align: center;
+}
+.customers-text-h5::after {
+    content: "";
+    background-image: url(../img/decoration-spoon.svg);
+    background-size: contain;
+    width: 40px;
+    height: 9px;
+    display: block;
+    background-repeat: no-repeat;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    position: relative;
+    left: 630px;
+}
+.customers-list-item {
+    gap: 32px;
+    padding-bottom: 52px;
+}
+.customers-list {
+    margin-top: 64px;
+}
+.customers .container {
+    padding-top: 152px;
+    padding-bottom: 132px;
+}
+.people-name {
+    padding-top: 16px;
+    padding-bottom: 4px;
+}
+.people-list {
+    align-items: center;
+}
+.laurels {
+    background-image: url(../img/second-sec-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: padding-box;
+    background-position: center;
+}
+.laurels-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-top: 64px;
+}
+.laurels-list-item:nth-of-type(1)::before {
+    content: "";
+    background-image: url(../img/bib-decor1.png);
+    background-size: contain;
+    width: 79px;
+    height: 79px;
+    display: block;
+}
+.laurels-list-item:nth-of-type(2)::before {
+    content: "";
+    background-image: url(../img/rising-decor.png);
+    background-size: contain;
+    width: 79px;
+    height: 79px;
+    display: block;
+}
+.laurels-list-item:nth-of-type(3)::before {
+    content: "";
+    background-image: url(../img/aa-decor1.png);
+    background-size: contain;
+    width: 79px;
+    height: 79px;
+    display: block;
+    background-repeat: no-repeat;
+}
+.laurels-list-item:nth-of-type(4)::before {
+    content: "";
+    background-image: url(../img/chef-decor1.png);
+    background-size: contain;
+    width: 79px;
+    height: 79px;
+    display: block;
+}
+.laurels-list-item {
+    display: flex;
+    align-items: center;
+    padding-bottom: 32px;
+}
+.laurels-items {
+    display: flex;
+    gap: 111px; 
+}
+.l-item-text {
+    width: 190px;
+    padding-left: 32px;
+}
+.laurels-type::after {
+    content: "";
+    background-image: url(../img/decoration-spoon.svg);
+    background-size: contain;
+    width: 40px;
+    height: 9px;
+    display: block;
+    background-repeat: no-repeat;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.laurels-items {
+    align-items: center;
+    padding: 128px 0px;
+}
+.updates {
+    background-color: var(--main-bg-color);
+}
+.updates-list {
+    display: flex;
+    gap: 32px;
+    padding: 64px 0px;
+}
+.updates-comment {
+    display: flex;
+    justify-content: space-between;
+}
+.updates .container {
+    padding: 152px 0px;
+}
+.updates-list-item {
+    gap: 32px;
+    display: flex;
+    flex-direction: column;
+}
+.button-updates {
+    display: flex;
+    justify-content: left;
+}
+.updates-button {
+    color: var(--laurels-button);
+}
+.updates-foto {
+    border: 1px solid var(--border-form-color);
+}
+.updates-blog {
+    text-align: center;
+}
+.updates-blog::after {
+    content: "";
+    background-image: url(../img/decoration-spoon.svg);
+    background-size: contain;
+    width: 40px;
+    height: 9px;
+    display: block;
+    background-repeat: no-repeat;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    position: relative;
+    left: 630px;
+}
+.updates-h4:hover {
+    text-decoration: underline;
+}
+#gallery {
+    background-image: url(../img/second-sec-bg.jpg);
+    padding: 129px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: padding-box;
+    background-position: center;
+}
+.gallery-list {
+    display: flex;
+    gap: 32px;
 }

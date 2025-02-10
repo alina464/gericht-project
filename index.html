@@ -65,127 +65,190 @@
         </section>
         <section class="information">
             <div class="container">
-                <div>
+                <div class="info-left">
                     <h2 class="info-name">About Us</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra adipiscing ultrices vulputate posuere tristique. In sed odio nec aliquet eu proin mauris et.</p>
-                    <button>Know More</button>
+                    <p class="info-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra adipiscing ultrices vulputate posuere tristique. In sed odio nec aliquet eu proin mauris et.</p>
+                    <button class="yellow-button">Know More</button>
                 </div>
-                <img src="./img/content-knife.png" width="84px" height="703px">
-                <div>
-                    <h2>Our History</h2>
-                    <p>Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat. Risus placerat morbi volutpat habitasse interdum mi aliquam In sed odio nec aliquet.</p>
-                    <button>Know More</button>
+                <div class="info-background">
+                    <img class="info-image" src="./img/content-knife.png" alt="Knife">
+                </div>
+                <div class="info-right">
+                    <h2 class="info-name-right">Our History</h2>
+                    <p class="info-description">Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat. Risus placerat morbi volutpat habitasse interdum mi aliquam In sed odio nec aliquet.</p>
+                    <button class="yellow-button">Know More</button>
                 </div>
             </div>
         </section>
-        <section>
+        <section class="reservation">
             <div class="container">
-                <div>
-                    <h5>Reservations</h5>
-                    <h2>Book A Table</h2>
+                <div class="bg-form">
+                    <div class="reservation-text">
+                        <h5 class="reservation-text-h5">Reservations</h5>
+                        <h2 class="reservation-text-h2">Book A Table</h2>
+                    </div>
+                    <form class="reservation-form">
+                        <select name="person" class="form" required>
+                            <option value="1">1 Person</option>
+                            <option value="2">2 People</option>
+                            <option value="3">3 People</option>
+                            <option value="4">4 People</option>
+                        </select>
+                        <input type="date" name="date" class="form" required />
+                        <input type="time" name="time" class="form" required />
+                    </form>
+                    <div class="submit-button">
+                        <button type="submit" class="yellow-button-submit">Book Now</button>
+                    </div>
                 </div>
-                <form class="reservation-form">
-                    <select name="person" required>
-                        <option value="1">1 Person</option>
-                        <option value="2">2 People</option>
-                        <option value="3">3 People</option>
-                        <option value="4">4 People</option>
-                    </select>
-                    <input type="date" name="date" required />
-                    <input type="time" name="time required" />
-                    <button type="submit">Book Now</button>
-                </form>
             </div>
         </section>
         <section class="menus">
             <div class="container">
                 <div class="menus-list">
-                    <p class="menu-item">Bar Menu</p>
-                    <p class="menu-item">Food Menu</p>
-                    <p class="menu-item">Desserts Menu</p>
+                    <a href="bar.html" class="menu-item">Bar Menu</a>
+                    <a href="#" class="menu-item">Food Menu</a>
+                    <a href="#" class="menu-item">Desserts Menu</a>
                 </div>
             </div>
         </section>
-        <section>
+        <section class="special-menu-bg">
             <div class="container">
-                <h5>Menu that fits you palatte</h5>
-                <h2>Today’s Special</h2>
+                <h5 class="special-menu-h5">Menu That Fits You Palatte</h5>
+                <h2 class="special-menu-h2">Today’s Special</h2>
                 <div class="special-menu">
-                    <div>
-                        <h3>Wine & Beer</h3>
-                        <ul>
+                    <div class="wine-beer">
+                        <h3 class="cocktail-name">Wine & Beer</h3>
+                        <ul class="special-cocktail-list">
                             <li>
-                                <h5>Chapel Hill Shiraz</h5>
-                                <h5>$56</h5>
+                                <div class="cocktail-item">
+                                    <h5 class="name-of-cocktail">Chapel Hill Shiraz</h5>
+                                    <div class="line-price">
+                                        <div class="line"></div>
+                                        <h5>$56</h5>
+                                    </div>
+                                </div>
                                 <p>AU | Bottle</p>
                             </li>
                             <li>
-                                <h5>Catena Malbec</h5>
-                                <h5>$59</h5>
+                                <div class="cocktail-item">
+                                    <h5 class="name-of-cocktail">Catena Malbec</h5>
+                                    <div class="line-price">
+                                        <div class="line"></div>
+                                        <h5>$59</h5>
+                                    </div>
+                                </div>
                                 <p>AR | Bottle</p>     
                             </li>
                             <li>
-                                <h5>La Vieille Rosé</h5>
-                                <h5>$44</h5>
+                                <div class="cocktail-item">
+                                    <h5 class="name-of-cocktail">La Vieille Rosé</h5>
+                                    <div class="line-price">
+                                        <div class="line"></div>
+                                        <h5>$44</h5>
+                                    </div>
+                                </div>
                                 <p>FR | 750 ml</p>
                             </li>
                             <li>
-                                <h5>Rhino Pale Ale</h5>
-                                <h5>$31</h5>
+                                <div class="cocktail-item">
+                                    <h5 class="name-of-cocktail">Rhino Pale Ale</h5>
+                                    <div class="line-price">
+                                        <div class="line"></div>
+                                        <h5>$31</h5>
+                                    </div>
+                                </div>
                                 <p>CA | 750 ml</p>
                             </li>
                             <li>
-                                <h5>Irish Guinness</h5>
-                                <h5>$26</h5>
+                                <div class="cocktail-item">
+                                    <h5 class="name-of-cocktail">Irish Guinness</h5>
+                                    <div class="line-price">
+                                        <div class="line"></div>
+                                        <h5>$26</h5>
+                                    </div>
+                                </div>
                                 <p>IE | 750 ml</p>
                             </li>
                         </ul>
                     </div>
                     <img src="./img/content-coctail.png" alt="Coctail" >
-                    <div>
-                        <h3>Cocktails</h3>
-                        <ul>
+                    <div class="other-cocktails">
+                        <h3 class="cocktail-name">Cocktails</h3>
+                        <ul class="special-cocktail-list">
                             <li>
-                                <h5>Aperol Spritz</h5>
-                                <h5>$20</h5>
+                                <div class="cocktail-item">
+                                    <h5 class="name-of-cocktail">Aperol Spritz</h5>
+                                    <div class="line-price">
+                                        <div class="line"></div>
+                                        <h5>$20</h5>
+                                    </div>
+                                </div>
                                 <p>Aperol | Villa Marchesi prosecco | soda | 30ml</p>
                             </li>
                             <li>
-                                <h5>Dark 'N' Stormy</h5>
-                                <h5>$16</h5>
+                                <div class="cocktail-item">
+                                    <h5 class="name-of-cocktail">Dark 'N' Stormy</h5>
+                                    <div class="line-price">
+                                        <div class="line"></div>
+                                        <h5>$16</h5>
+                                    </div>
+                                </div>
                                 <p>Dark rum | Ginger beer | Slice of lime. </p>
                             </li>
                             <li>
-                                <h5>Daiquiri</h5>
-                                <h5>$10</h5>
+                                <div class="cocktail-item">
+                                    <h5 class="name-of-cocktail">Daiquiri</h5>
+                                    <div class="line-price">
+                                        <div class="line"></div>
+                                        <h5>$10</h5>
+                                    </div>
+                                </div>
                                 <p>Rum | Citrus juice | Sugar</p>
                             </li>
                             <li>
-                                <h5>Old Fashioned</h5>
-                                <h5>$31</h5>
+                                <div class="cocktail-item">
+                                    <h5 class="name-of-cocktail">Old Fashioned</h5>
+                                    <div class="line-price">
+                                        <div class="line"></div>
+                                        <h5>$31</h5>
+                                    </div>
+                                </div>
                                 <p>Bourbon | Brown sugar | Angostura Bitters</p>
                             </li>
                             <li>
-                                <h5>Negroni</h5>
-                                <h5>$26</h5>
+                                <div class="cocktail-item">
+                                    <h5 class="name-of-cocktail">Negroni</h5>
+                                    <div class="line-price">
+                                        <div class="line"></div>
+                                        <h5>$26</h5>
+                                    </div>
+                                </div>
                                 <p>Gin | Sweet Vermouth | Campari | Orange garnish</p>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <button>View More</button>
+                <div class="button">
+                    <button class="yellow-button">View More</button>
+                </div>
             </div>
         </section>
         <section class="chef-information">
             <div class="container">
                 <div class="chef-foto">
-                    <div class="chef-cube"></div>
-                    <img class="content-chef" src="./img/chef-kevin.png" alt="Our Chef">
-                    <div class="chef-cube-sec"></div>
+                    <div class="content-foto-chef">
+                        <div class="chef-cube"></div>
+                        <img class="content-chef" src="./img/chef-kevin.png" alt="Our Chef">
+                        <div class="chef-cube-sec"></div>
+                    </div>
                     <div class="chef-item">
                         <h5 class="chef-item-h5">Chef’s Word</h5>
                         <h2 class="chef-item-key">What We Believe In</h2>
-                        <p class="chef-item-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit auctor sit .auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue ac consequat, aliquam molestie lectus eu. Congue iaculis integer curabitur semper sit nunc.</p>
+                        <div class="decor">
+                            <div class="decoration-symbol"></div><p class="chef-item-info-second">Lorem ipsum dolor sit amet, consectetur adipiscing elit auctor sit .</p>
+                        </div>
+                        <p class="chef-item-info">auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue ac consequat, aliquam molestie lectus eu. Congue iaculis integer curabitur semper sit nunc.</p>
                         <h4 class="chef-name">Kevin Luo</h4>
                         <p class="chef-role">Chef & Founder</p>
                     </div>
@@ -194,40 +257,40 @@
         </section>
         <section class="customers">
             <div class="container">
-                <div>
-                    <h5>Testimony</h5>
-                    <h2>Happy customers</h2>
+                <div class="customers-text">
+                    <h5 class="customers-text-h5">Testimony</h5>
+                    <h2 class="customers-text-h2">Happy Customers</h2>
                 </div>
                 <ul class="customers-list">
                     <li class="customers-list-item">
                         <img src="./img/worker-wade.png" alt="Wade Warren">
                         <div class="people-list">
                             <p class="people-feedback">Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue.</p>
-                            <h4>Wade Warren</h4>
+                            <h4 class="people-name">Wade Warren</h4>
                             <p class="people-job">Sommelier</p>
                         </div>
                     </li>
                     <li class="customers-list-item">
                         <img src="./img/worker-jane.png" alt="Jane Cooper">
-                        <div>
+                        <div class="people-list">
                             <p class="people-feedback">Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue.</p>
-                            <h4>Jane Cooper</h4>
+                            <h4 class="people-name">Jane Cooper</h4>
                             <p class="people-job">Chef</p>
                         </div>
                     </li>
                     <li class="customers-list-item">
                         <img src="./img/worker-robert.png" alt="Robert Fox">
-                        <div>
+                        <div class="people-list">
                             <p class="people-feedback">Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue.</p>
-                            <h4>Robert Fox</h4>
+                            <h4 class="people-name">Robert Fox</h4>
                             <p class="people-job">Chef</p>
                         </div>
                     </li>
                     <li class="customers-list-item">
                         <img src="./img/worker-brooklyn.png" alt="Brooklyn Simmons">
-                        <div>
+                        <div class="people-list">
                             <p class="people-feedback">Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue.</p>
-                            <h4>Brooklyn Simmons</h4>
+                            <h4 class="people-name">Brooklyn Simmons</h4>
                             <p class="people-job">Caterer</p>
                         </div>
                     </li>
@@ -242,25 +305,33 @@
         <section class="laurels">
             <div class="container">
                 <div class="laurels-items">
-                    <div>
+                    <div class="laurels-main">
                         <h5 class="laurels-type">Awards & recognition</h5>
                         <h2>Our Laurels</h2>
-                        <ul>
-                            <li>
-                                <h5 class="laurels-name">Bib Gourmond</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                        <ul class="laurels-list">
+                            <li class="laurels-list-item">
+                                <div class="l-item-text">
+                                    <h5 class="laurels-name">Bib Gourmond</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                                </div>
                             </li>
-                            <li>
-                                <h5 class="laurels-name">Rising Star</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                            <li class="laurels-list-item">
+                                <div class="l-item-text">
+                                    <h5 class="laurels-name">Rising Star</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                                </div>
                             </li>
-                            <li>
-                                <h5 class="laurels-name">AA Hospitality </h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                            <li class="laurels-list-item">
+                                <div class="l-item-text">
+                                    <h5 class="laurels-name">AA Hospitality </h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                                </div>
                             </li>
-                            <li>
-                                <h5 class="laurels-name">Outstanding Chef</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                            <li class="laurels-list-item">
+                                <div class="l-item-text">
+                                    <h5 class="laurels-name">Outstanding Chef</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -271,53 +342,63 @@
         <section class="updates">
             <div class="container">
                 <div class="updates-name">
-                    <h5>Blogs</h5>
+                    <h5 class="updates-blog">Blogs</h5>
                     <h2>Gerícht updates</h2>
                 </div>
-                <ul>
-                    <li>
-                        <img src="./img/content-grill.png" alt="Grill" >
-                        <div>
+                <ul class="updates-list">
+                    <li class="updates-list-item">
+                        <img class="updates-foto" src="./img/content-grill.png" alt="Grill" >
+                        <div class="updates-comment">
                             <p>16 Apr 2021</p>
                             <p>- Annalisa L</p>
                         </div>
-                        <h4>Tips For Prepping And Caring For Your Grill</h4>
+                        <h4 class="updates-h4">Tips For Prepping And Caring For Your Grill</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.</p>
-                        <button><a href="#">Read More</a></button>
+                        <div class="button-updates">
+                            <button class="updates-button">Read More</button>
+                        </div>
                     </li>
-                    <li>
-                        <img src="./img/content-coctails.png" alt="Cocktails" >
-                        <div>
+                    <li class="updates-list-item">
+                        <img class="updates-foto" src="./img/content-coctails.png" alt="Cocktails" >
+                        <div class="updates-comment">
                             <p>23 May 2021</p>
                             <p>-John Micheal</p>
                         </div>
-                        <h4>Summer Cocktails And Mocktails</h4>
+                        <h4 class="updates-h4">Summer Cocktails And Mocktails</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.</p>
-                        <button><a href="#">Read More</a></button>
+                        <div class="button-updates">
+                            <button class="updates-button">Read More</button>
+                        </div>
                     </li>
-                    <li>
-                        <img src="./img/content-food.png" alt="Food">
-                        <div>
+                    <li class="updates-list-item">
+                        <img class="updates-foto" src="./img/content-food.png" alt="Food">
+                        <div class="updates-comment">
                             <p>06 Aug 2021</p>
                             <p>-Fred W</p>
                         </div>
-                        <h4>Easy Cooking For College Students</h4>
+                        <h4 class="updates-h4">Easy Cooking For College Students</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.</p>
-                        <button><a href="#">Read More</a></button>
+                        <div class="button-updates">
+                            <button class="updates-button">Read More</button>
+                        </div>
                     </li>
                 </ul>
-                <button>View More</button>
+                <div class="button">
+                    <button class="yellow-button">View More</button>
+                </div>
             </div>
         </section>
-        <section>
+        <section id="gallery">
             <div class="container">
-                <ul>
+                <ul class="gallery-list">
                     <li>
                         <div>
                             <h5>Instagram</h5>
                             <h2>Photo Gallery</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mu.</p>
-                            <button>View More</button>
+                            <div class="button-gallery">
+                                <button class="yellow-button">View More</button>
+                            </div>
                         </div>
                     </li>
                     <li>
