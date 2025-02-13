@@ -4,8 +4,341 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css" >
+    <link rel="stylesheet" href="./css/style.css" >
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <div class="background-two">
+        <header>
+            <div class="header-bar">
+                <div class="container-header">
+                    <img src="./img/gericht-logo.png" alt="gericht-logo" width="199px" height="57px">
+                    <ul class="header-nav">
+                        <li><a class="nav-item" href="./index.html">Home</a></li>
+                        <li><a class="nav-item" href="#">Pages</a></li>
+                        <li><a class="nav-item" href="#">Contact Us</a></li>
+                        <li><a class="nav-item" href="#">Blog</a></li>
+                        <li><a class="nav-item" href="#">Landing</a></li>
+                    </ul>
+                    <div class="header-booking">
+                        <p class="nav-item-right-p">Log in / Registration</p>
+                        <div class="header-gradient"></div>
+                        <a class="nav-item-right" href="#">Book Table</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="rocks">
+                <div class="intro-side-hashtag">
+                    <p class="hashtag">#Bar</p>
+                    <p class="hashtag">#Gericht</p>
+                </div>
+                <div class="container">
+                    <p class="rocks-section-title">On The Rocks</p>
+                    <img class="rocks-section-img" src="./img/rocks-main-img.png">
+                </div>
+                <div class="rocks-scroll">
+                    <div class="header-scroll-gradient"></div>
+                    <p class="nav-scroll">SCROLL</p>
+                </div>
+                <div class="content-page-bar">
+                    <p class="page-number">01</p>
+                    <svg width="16" height="1" viewBox="0 0 16 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line y1="0.5" x2="16" y2="0.5" stroke="#DCCA87"/>
+                    </svg>
+                    <p class="page-number">02</p>
+                    <p class="page-number">03</p>
+                    <p class="page-number">04</p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <main>
+        <section class="reservation">
+            <div class="brand-logo-reservation">
+
+            </div>
+            <div class="container">
+                <div class="bg-form">
+                    <div class="reservation-text">
+                        <h5 class="reservation-text-h5">Reservations</h5>
+                        <h2 class="reservation-text-h2">Book A Table</h2>
+                    </div>
+                    <form class="reservation-form">
+                        <select name="person" class="form" required>
+                            <option value="1">1 Person</option>
+                            <option value="2">2 People</option>
+                            <option value="3">3 People</option>
+                            <option value="4">4 People</option>
+                        </select>
+                        <input type="date" name="date" class="form" required />
+                        <input type="time" name="time" class="form" required />
+                    </form>
+                    <div class="submit-button">
+                        <button type="submit" class="yellow-button-submit">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bar-entertainment">
+            <div class="brand-logo-entertainment">
+
+            </div>
+            <div class="container">
+                <div class="bar-entertainment-info">
+                    <img class="beer-foto" src="./img/beer-img.png" alt="Beer in bar">
+                    <div class="foto-entertainment">
+                        <img src="./img/bar-cocktail-img.png">
+                        <div class="entertainment-text">
+                            <h5 class="entertainment-text-h5">About Us</h5>
+                            <h2 class="entertainment-text-h2">Food, Drinks, Entertainment In One</h2>
+                            <p class="entertainment-text-p">Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat. Risus placerat morbi volutpat habitasse interdum mi aliquam In sed odio nec aliquet.</p>
+                            <button class="yellow-button">Know More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="your-poison">
+            <div class="container">
+                <div class="your-poison-text">
+                    <h5 class="your-poison-text-h5">Wide Range To Choose From</h5>
+                    <h2 class="your-poison-text-h2">What’s Your Poison?</h2>
+                </div>
+                <ul class="poison-cocktails-list">
+                    <li class="poison-cocktails-list-item">
+                        <img class="poison-cocktails-list-img" src="./img/beer-photo.png" alt="Beer">
+                    </li>
+                    <li class="poison-cocktails-list-item">
+                        <img class="poison-cocktails-list-img" src="./img/wine-photo.png" alt="Wine">
+                    </li>
+                    <li class="poison-cocktails-list-item">
+                        <img class="poison-cocktails-list-img" src="./img/cocktail-photo.png" alt="Cocktail">
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="happy-hours">
+            <div class="container">
+                <div class="happy-hours-text">
+                    <h2 class="happy-hours-text-h2">Happy Hours</h2>
+                    <div class="working-hours">
+                        <h5>Monday - Friday</h5>
+                        <h5>(4:00 Pm - 7:00 pm)</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="special-menu-bg">
+            <div class="brand-logo-special-menu">
+
+            </div>
+            <div class="container">
+                <h5 class="special-menu-h5">Menu That Fits You Palatte</h5>
+                <h2 class="special-menu-h2">Today’s Special</h2>
+                <div class="special-menu">
+                    <div class="wine-beer">
+                        <h3 class="cocktail-name">Wine & Beer</h3>
+                        <ul class="special-cocktail-list">
+                            <li>
+                                <div class="cocktail-item">
+                                    <h5 class="name-of-cocktail">Chapel Hill Shiraz</h5>
+                                    <div class="line-price">
+                                        <div class="line"></div>
+                                        <h5>$56</h5>
+                                    </div>
+                                </div>
+                                <p>AU | Bottle</p>
+                            </li>
+                            <li>
+                                <div class="cocktail-item">
+                                    <h5 class="name-of-cocktail">Catena Malbec</h5>
+                                    <div class="line-price">
+                                        <div class="line"></div>
+                                        <h5>$59</h5>
+                                    </div>
+                                </div>
+                                <p>AR | Bottle</p>     
+                            </li>
+                            <li>
+                                <div class="cocktail-item">
+                                    <h5 class="name-of-cocktail">La Vieille Rosé</h5>
+                                    <div class="line-price">
+                                        <div class="line"></div>
+                                        <h5>$44</h5>
+                                    </div>
+                                </div>
+                                <p>FR | 750 ml</p>
+                            </li>
+                            <li>
+                                <div class="cocktail-item">
+                                    <h5 class="name-of-cocktail">Rhino Pale Ale</h5>
+                                    <div class="line-price">
+                                        <div class="line"></div>
+                                        <h5>$31</h5>
+                                    </div>
+                                </div>
+                                <p>CA | 750 ml</p>
+                            </li>
+                            <li>
+                                <div class="cocktail-item">
+                                    <h5 class="name-of-cocktail">Irish Guinness</h5>
+                                    <div class="line-price">
+                                        <div class="line"></div>
+                                        <h5>$26</h5>
+                                    </div>
+                                </div>
+                                <p>IE | 750 ml</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <img src="./img/content-coctail.png" alt="Coctail" >
+                    <div class="other-cocktails">
+                        <h3 class="cocktail-name">Cocktails</h3>
+                        <ul class="special-cocktail-list">
+                            <li>
+                                <div class="cocktail-item">
+                                    <h5 class="name-of-cocktail">Aperol Spritz</h5>
+                                    <div class="line-price">
+                                        <div class="line"></div>
+                                        <h5>$20</h5>
+                                    </div>
+                                </div>
+                                <p>Aperol | Villa Marchesi prosecco | soda | 30ml</p>
+                            </li>
+                            <li>
+                                <div class="cocktail-item">
+                                    <h5 class="name-of-cocktail">Dark 'N' Stormy</h5>
+                                    <div class="line-price">
+                                        <div class="line"></div>
+                                        <h5>$16</h5>
+                                    </div>
+                                </div>
+                                <p>Dark rum | Ginger beer | Slice of lime. </p>
+                            </li>
+                            <li>
+                                <div class="cocktail-item">
+                                    <h5 class="name-of-cocktail">Daiquiri</h5>
+                                    <div class="line-price">
+                                        <div class="line"></div>
+                                        <h5>$10</h5>
+                                    </div>
+                                </div>
+                                <p>Rum | Citrus juice | Sugar</p>
+                            </li>
+                            <li>
+                                <div class="cocktail-item">
+                                    <h5 class="name-of-cocktail">Old Fashioned</h5>
+                                    <div class="line-price">
+                                        <div class="line"></div>
+                                        <h5>$31</h5>
+                                    </div>
+                                </div>
+                                <p>Bourbon | Brown sugar | Angostura Bitters</p>
+                            </li>
+                            <li>
+                                <div class="cocktail-item">
+                                    <h5 class="name-of-cocktail">Negroni</h5>
+                                    <div class="line-price">
+                                        <div class="line"></div>
+                                        <h5>$26</h5>
+                                    </div>
+                                </div>
+                                <p>Gin | Sweet Vermouth | Campari | Orange garnish</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="button">
+                    <button class="yellow-button">View More</button>
+                </div>
+            </div>
+            <div class="brand-logo-special-menu-2">
+
+            </div>
+        </section>
+        <section class="contact">
+            <div class="container">
+                <div class="contact-items">
+                    <div>
+                        <h5 class="contact-item-h5">Contact</h2>
+                        <h2 class="contact-item-h2">Find Us</h5>
+                        <p>Lane Ends Bungalow, Whatcroft Hall Lane, Rudheath, CW9 7SG</p>
+                        <div class="opening-hours">
+                            <h5 class="opening-hours-h5">Opening Hours</h5>
+                            <p>Mon - Fri: 10:00 am - 02:00 am</p>
+                            <p>Sat - Sun: 10:00 am - 03:00 am</p>
+                            <div class="visit-us">
+                                <button class="yellow-button">Visit Us</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-foto-contact">
+                        <div class="contact-cube"></div>
+                        <img class="content-contact" src="./img/contact-cocktail.png" alt="Contact Cocktail">
+                        <div class="contact-cube-sec"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="bg">
+            <div class="brand-logo-footer-bar">
+
+            </div>
+            <div class="container">
+                <div class="email-text">
+                    <h5 class="email-text-h5">Newsletter</h5>
+                    <h2 class="email-text-h2">Subscribe to Our Newsletter</h2>
+                </div>
+            </div>
+        </div>
+        <section class="footer">
+            <div class="container">
+                <div class="info-subscribe">
+                    <p class="info-subscribe-p">And never miss latest Updates!</p>
+                    <div class="subscribe-place">
+                        <input class="email-place" type="email" placeholder="Email Address">
+                        <button class="subscribe-button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-footer">
+                <div class="footer-scroll-gradient"></div>
+                <p class="nav-scroll">TOP</p>
+            </div>
+            <div class="container">
+                <div class="footer-info">
+                    <div class="footer-info-item">
+                        <h4 class="item-h4">Contact Us</h4>
+                        <a class="footer-link" href="#">9 W 53rd St, New York, NY 10019, USA</a>
+                        <div class="links-footer">
+                            <a class="footer-link" href="#">+1 212-344-1230</a>
+                            <a class="footer-link" href="#">+1 212-555-1230</a>
+                        </div>
+                    </div>
+                    <div class="footer-info-item">
+                        <h2 class="item-h2">GERICHT</h2>
+                        <p class="item-quote">"The best way to find yourself is to lose yourself in the service of others.”</p>
+                        <div class="decorations">
+                            <div class="facebook"></div>
+                            <div class="twitter"></div>
+                            <div class="instagram"></div>
+                        </div>
+                    </div>
+                    <div class="footer-info-item">
+                        <h4 class="item-h4">Working Hours</h4>
+                        <p>Monday-Friday: 08:00 am -12:00 am</p>
+                        <p>Saturday-Sunday: 07:00am -11:00 pm</p>
+                    </div>
+                </div>
+                <p class="copyright">2021 Gerícht. All Rights reserved.</p>
+            </div>
+        </section>
+    </footer>
 </body>
 </html>
